@@ -1,9 +1,11 @@
 <?php
-namespace TranslationsFinder\Format;
 
-interface FormatInterface
+declare(strict_types=1);
+
+namespace TwigPo\Format;
+
+interface Format
 {
-
     /**
      * @param string $file_contents the file in string
      *

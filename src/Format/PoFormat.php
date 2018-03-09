@@ -1,10 +1,12 @@
 <?php
-namespace TranslationsFinder\Format;
 
-class PoFormat implements FormatInterface
+declare(strict_types=1);
+
+namespace TwigPo\Format;
+
+final class PoFormat implements Format
 {
-
-    const MSGID_REGEX = '/msgid "(.*)"/mu';
+    private const MSGID_REGEX = '/msgid "(.*)"/mu';
 
     /**
      * @param string $file_contents the file in string
